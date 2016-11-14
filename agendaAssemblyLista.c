@@ -100,13 +100,16 @@ int main(int argc, char const *argv[]){
 	criarLista(&lista);
 
 	do{
+		printf("\n----------------------------------------------\n");
 		printf(" 1 -- INSERIR CONTATOS \n");
 		printf(" 2 -- REMOVER CONTATOS \n");
 		printf(" 3 -- LISTAR TODOS CONTATOS \n");
 		printf(" 4 -- MOSTRAR CONTATOS ESPECIFICO\n");
 		printf(" 5 -- TAMANHO \n");
 		printf(" 0 -- SAIR\n");
+		printf("OPCAO: ");
 		scanf("%d", &op);
+		printf("\n----------------------------------------------\n");
 		switch(op){
 			case 1:
 
