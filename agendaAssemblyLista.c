@@ -34,6 +34,27 @@ void inserir(LISTA *lista){
 	}
 }
 
+void remover(LISTA *lista){
+	int fone;
+	if(lista->numElementos == 0)
+		printf("Nao existe contatos para ser removido\n");
+	else{
+		printf("Informe o numero do Telefone: ");
+		scanf("%d", &fone);
+		for(int x = 0; x < lista->numElementos; x++){
+			if(lista->conteudo[x].telefone == fone){
+				int b = x;
+				while(b < lista->numElementos){
+					lista->conteudo[b] = lista->conteudo[b+1];
+					b++;
+				}
+				lista->numElementos--;
+			}
+		}
+	}
+}
+
+
 void tamanho(LISTA *lista){
 	printf("TAMANHO: %d", lista->numElementos);
 	printf("\n");
@@ -92,7 +113,7 @@ int main(int argc, char const *argv[]){
 				inserir(&lista);
 				break;
 			case 2:
-				//desempilhar(&lista);
+				remover(&lista);
 				break;
 			case 3:
 				mostrarTodos(&lista);
