@@ -107,9 +107,10 @@ int main(int argc, char const *argv[]){
 		printf(" 4 -- MOSTRAR CONTATOS ESPECIFICO\n");
 		printf(" 5 -- TAMANHO \n");
 		printf(" 0 -- SAIR\n");
-		printf("OPCAO: ");
+		printf("----------------------------------------------\n");
+		printf(" OPCAO: ");
 		scanf("%d", &op);
-		printf("\n----------------------------------------------\n");
+		printf("----------------------------------------------\n");
 		switch(op){
 			case 1:
 
